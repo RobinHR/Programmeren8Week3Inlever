@@ -3,6 +3,9 @@ const fileButton = document.querySelector("#file")
 const classifyButton = document.getElementById('classifyButton')
 const section = document.getElementById('section')
 
+// Speak
+
+
 fileButton.addEventListener("change", (event)=>{
     image.src = URL.createObjectURL(event.target.files[0])
 })
@@ -16,6 +19,8 @@ image.addEventListener('load', () => userImageUploaded())
 function userImageUploaded(){
     console.log("The image is now visible in the DOM")
 }
+
+
 
 // Create a variable containing the result container
 const element = document.getElementById("imageResult");
